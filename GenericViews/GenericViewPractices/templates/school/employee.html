@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Employ Detail View</h1>
+
+    {% for emp in employee %}
+    <li style="list-style: none;"><a href="{%url 'emp2' emp.id %}"> {{emp.name}}</a></li>
+    {% endfor %}
+
+</body>
+</html>

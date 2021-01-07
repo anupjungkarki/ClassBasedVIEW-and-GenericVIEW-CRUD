@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Student Detail View</h1>
+
+    <tr><td>{{emp.id}}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.roll}}</td>
+        <td>{{emp.course}}</td>
+    </tr>
+    <hr>
+    {% for emp in all_employee %}
+    <li style="list-style: none;"><a href="{%url 'emp2' emp.id %}"> {{emp.name}}</a></li>
+    {% endfor %}
+</body>
+</html>

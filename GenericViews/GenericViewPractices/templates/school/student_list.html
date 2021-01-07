@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Welcome To school School</h1>
+<table>
+    <tr>
+    <th>Name</th>
+    <th>Roll</th>
+    <th>Course</th>
+    </tr>
+{% for student in student_list %}
+    <tr><td>{{student.name}}</td>
+    <td>{{student.roll}}</td>
+    <td>{{student.course}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
